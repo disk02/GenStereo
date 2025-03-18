@@ -1,0 +1,3 @@
+[submodule "extern/DAM2"]
+	path = extern/DAM2
+	url = https://github.com/DepthAnything/Depth-Anything-V2.git

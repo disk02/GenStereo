@@ -1,0 +1,12 @@
+torch>=2.1.0  # Upgrade to a version that supports `float8_e4m3fn`
+torchvision>=0.16.0  # Upgrade to match the PyTorch version
+diffusers==0.31.0  # Pin a compatible version of diffusers
+accelerate
+transformers
+scipy
+opencv-python
+omegaconf
+einops
+roma
+jaxtyping
+numpy<2  # Downgrade NumPy to avoid compatibility issues
