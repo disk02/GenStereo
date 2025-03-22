@@ -10,3 +10,4 @@ einops
 roma
 jaxtyping
 numpy<2  # Downgrade NumPy to avoid compatibility issues
+opencv-contrib-python-headless==4.7.0.72
