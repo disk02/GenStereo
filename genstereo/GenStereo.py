@@ -258,8 +258,14 @@ class GenStereo():
         self,
         image: Float[Tensor, 'B C H W']
     ) -> Float[Tensor, 'B C H W']:
+        # Handle depth maps (1 channel) vs RGB (3 channels)
+        if image.size(1) == 1:  # Depth map case
+            image = image.squeeze(1).unsqueeze(1)  # [B, 1, H, W]
         image = F.interpolate(
-            image, (self.cfg.height, self.cfg.width)
+            image, 
+            size=(self.cfg.height, self.cfg.width),
+            mode='bilinear',
+            align_corners=False
         )
         return image
 
