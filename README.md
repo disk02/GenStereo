@@ -1,5 +1,6 @@
 # GenStereo: Towards Open-World Generation of Stereo Images and Unsupervised Matching
 
+This fork adds CLI functionality and tiled diffusion to GenStereo
 
 <div class="is-size-5 publication-authors">
   <span class="author-block">
